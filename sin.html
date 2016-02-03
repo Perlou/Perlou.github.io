@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body { background: #000; }
+#c1 { background: #fff; position:absolute; left:600px; top: 200px; }
+	/* #div1 { position: absolute; left: 0; top: 50%; width: 10px; height: 10px; background: #0fc; }
+	.box { width: 2px; height: 2px; background: red; position: absolute; }*/
+</style>
+<script>	
+
+window.onload = function(){
+
+	var oC = document.getElementById('c1');
+	var oGc = oC.getContext('2d');
+	var arr = [];
+
+	setInterval(function(){
+
+		oGc.clearRect(0,0,oC.width,oC.height);
+
+		console.log(arr.length);
+
+		for(var i=0; i<arr.length;i++){
+			arr[i].num += 5;
+			arr[i].x = arr[i].startX - Math.sin(arr[i].num*Math.PI/180)*arr[i].speed;
+			arr[i].y = arr[i].startY - arr[i].num*Math.PI/180*arr[i].speed;
+
+			if(arr[i].y <= 20){
+				arr.splice(i,1);
+			}
+
+		}
+
+		for(var i=0;i<arr.length;i++){
+			oGc.fillStyle = 'rgba('+arr[i].c1+','+arr[i].c2+','+arr[i].c3+','+arr[i].c4+')';
+			oGc.beginPath();
+				oGc.moveTo(arr[i].x,arr[i].y);
+				oGc.arc(arr[i].x,arr[i].y,arr[i].r,0,360*Math.PI/180,false);
+				oGc.fill();
+			oGc.closePath();
+		}
+
+
+	},100/6);
+
+	setInterval(function(){
+
+		var x = Math.random()*oC.width;
+		var y = oC.height-Math.random()*10;
+		var r = Math.random()*6+4;
+		var c1 = Math.floor(Math.random()*255);
+		var c2 = Math.floor(Math.random()*255);
+		var c3 = Math.floor(Math.random()*255);
+		var c4 = 1;
+		var num = 0;
+		var startX = x;
+		var startY = y;
+		var speed = Math.random()*20 + 20; 
+
+		arr.push({
+			x : x,
+			y : y,
+			r : r,
+			c1 : c1,
+			c2 : c2,
+			c3 : c3,
+			c4 : c4,
+			num : num,
+			startX : startX,
+			startY : startY,
+			speed : speed,
+
+
+		});
+
+	},100);
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+<canvas id="c1" width="140" height="300"></canvas>
+</body>
+</html>
