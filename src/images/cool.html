@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>吕迪迪的个人简历</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        var openNub = 0;
+        var bOff = true;
+        var oLi = null;
+    </script>
+    <script src="js/json.js"></script>
+    <script src="js/walkway.min.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/initial.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/myinfo.js"></script>
+    <script src="js/workinfo.js"></script>
+    <script src="js/exp2.js"></script>
+    <script>
+        window.onload = function(){
+
+            init();
+            load();
+            //自我描述
+
+        };
+    </script>
+</head>
+<body>
+<a href="simple.html" class="simple"></a>
+<div id="audio">
+    <div>
+        <img src="images/icons/bofang.png" alt=""/>
+    </div>
+</div>
+<div id="load">
+    <div class="load-box">
+        <div class="load-circle">
+            <img src="images/icons/load1.png" alt=""/>
+            <img src="images/icons/load2.png" alt=""/>
+            <div></div>
+        </div>
+        <canvas id="myCanvas" width="172" height="172">
+            您的浏览器不支持canvas！
+        </canvas>
+        <div class="load-text"><span id="percent">0</span><span>%</span></div>
+        <div class="sj">
+            <div class="sj-box">
+                <div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                </div>
+            </div>
+            <div class="sj-box">
+                <div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                </div>
+            </div>
+            <div class="sj-box">
+                <div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                    <div class="sj-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>了解一个人，您只需要<span>0</span>秒<span>.</span></p>
+</div>
+<nav>
+    <ul>
+        <li><a href="#" class="active">项目经验</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">工作经历</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">自我描述</a></li>
+    </ul>
+</nav>
+<div id="exp">
+    <div class="lightLine"></div>
+    <ul></ul>
+    <div id="text">
+        <div class="textTop">
+            <h3>XXX项目大工程01</h3>
+            <div class="textBottom">
+                <div class="textItem"></div>
+                <div class="xq"><a href="javascript:;">详情&gt&gt</a></div>
+            </div>
+        </div>
+        <div class="textLine"></div>
+        <div class="textLine2"></div>
+    </div>
+    <div id="table"></div>
+    <div id="backBg">
+        <div class="pop-top">
+            <div class="pop-bottom">
+                <div class="pop-item">
+                    <a href="javascript:;" class="close"></a>
+                    <div class="photo"></div>
+                    <ul>
+                        <li>项目名称：<span></span></li>
+                        <li>项目时间：<span>推他网站后台界面搭建</span></li>
+                        <li>项目链接：<a href="" target="_blank"></a></li>
+                        <li>项目描述：<p></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="work">
+    <div class="work-info">
+        <div id="svgBj"></div>
+        <svg id="work-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-295 0 590 186">
+            <g id="workInfo">
+                <path d="M-16,48l-42-30h-107v-17h-97l-14,17h-18v 27" stroke-width="2"></path>
+                <path d="M 33,61l 20-17h 241v 17" stroke-width="2"></path>
+                <path d="M-14,45l-43.5-31.5h-104v-14" style="stroke:#fff"></path>
+                <path d="M 31,58l 21.5-18.5h 244" style="stroke:#fff"></path>
+            </g>
+            <g id="workInfo2">
+                <path d="M-294,138v 30l 15,15h 11" stroke-width="2"></path>
+                <path d="M 294,119v 9l-14,14h-7" stroke-width="2"></path>
+            </g>
+            <g id="workInfo3">
+                <path d="M-294,48v 90" stroke-width="2" stroke-dasharray="2 4" style="stroke: #f39938"></path>
+                <path d="M 294,63v 56" stroke-width="2" stroke-dasharray="2 4" style="stroke: #f39938"></path>
+            </g>
+            <g id="workInfo4">
+                <path d="M-267.5,179v 7m 1-3.5h 189m 1-3v 7" style="stroke: #fff"></path>
+                <path d="M 272.5,138v 7m-1-3.5h-206m-1-3v 7" style="stroke: #fff"></path>
+            </g>
+            <g id="workInfo5">
+                <path d="M-76,183h 25l 37-38" stroke-width="2"></path>
+                <path d="M 64,142h-10l-17-13" stroke-width="2"></path>
+            </g>
+        </svg>
+        <div class="work-item clearfix">
+            <div class="work-left">
+                <h3 class="work-left-children">工作描述</h3>
+                <div class="work-left-text">
+                    <p class="work-left-children">工作职位 : <span>网络工程师</span></p>
+                    <p class="work-left-children">本人具有两年电话销售经验，具有较强的销售能力，业绩突出，深受领导和销售团队同仁好评。本身对销售行业有很浓厚的兴趣，喜欢具有挑战性的工作，能够最大限度承受工作压力。工作积极</p>
+                    <a href="javascript:;" class="details work-left-children">详情&gt&gt</a>
+                </div>
+            </div>
+            <div class="work-middle">
+                <img src="images/icons/header1.png" alt=""/>
+                <div class="circle work-circle"></div>
+            </div>
+        </div>
+        <div class="work-right">
+            <p>2012 年 1 月 - 2015 年 3 月</p>
+            <div class="work-3D"></div>
+            <div class="jt">
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    <div id="ufo">
+        <img src="images/ufo/cutufo_0.png" alt=""/>
+        <img src="images/shakelight.png" alt=""/>
+        <div class="ufoLight"></div>
+    </div>
+    <div class="fire">
+        <img src="images/fire.png" alt=""/>
+    </div>
+    <div class="light">
+        <img src="images/light.png" alt=""/>
+    </div>
+    <div class="pop">
+        <div class="alert-top">
+            <h3>工作描述</h3>
+            <a href="javascript:;" class="close"></a>
+            <div class="alert-bottom">
+                啊撒旦飞洒地方啊撒旦飞洒地方啊撒旦飞洒地方啊撒旦飞洒地方啊撒旦飞洒地方啊撒旦飞洒地方
+            </div>
+        </div>
+    </div>
+</div>
+<div id="description">
+    <div class="info">
+        <div id="bg"></div>
+        <div id="bg2">
+        <p></p>
+    </div>
+        <svg id="info-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-279 0 558 376">
+            <g id="myInfo">
+                <path d="M 0,19.5h 262l 5.5,5v 165l 11,11v 28l-11,11v 16l-5,5h -263"></path>
+                <path d="M 0,19.5h -262l -5.5,5v 165l-11,11v 28l 11,11v 16l 5,5h 263"></path>
+            </g>
+            <g id="myInfo2">
+                <path d="M-267.5,79l-7,7v 111"></path>
+                <path d="M 267.5,79l 7,7v 111"></path>
+            </g>
+            <g id="myInfo3">
+                <path d="M 117,19.5l-19-19h-196l-19,19"></path>
+            </g>
+            <g id="myInfo4">
+                <polygon points="100,14 91,5 -4,5 5,14"></polygon>
+                <polygon points="1,14 -8,5 -41,5 -32,14"></polygon>
+                <polygon points="-36,14 -45,5 -67,5 -58,14"></polygon>
+                <polygon points="-62,14 -71,5 -79,5 -70,14"></polygon>
+                <polygon points="-74,14 -83,5 -85,5 -94,14"></polygon>
+            </g>
+            <g id="myInfo5">
+                <path d="M 261,9h 9l 8,8v 8M-261,9h-9l-8,8v 8M 261,270h 9l 8,-8v-8M-261,270h-9l-8,-8v-8" style="stroke:#f4f4f4;" stroke-width="2"></path>
+            </g>
+            <g id="hope">
+                <path d="M 0,295.5h 262l 5.5,5v 17l 11,11v 8l-11,11v 15l-5,5h-263"></path>
+                <path d="M 0,295.5h-262l-5.5,5v 17l-11,11v 8l 11,11v 15l 5,5h 263"></path>
+            </g>
+            <g id="hope2">
+                <path d="M 261,287h 9l 8,8v 8M-261,287h-9l-8,8v 8M 261,375h 9l 8,-8v-8M-261,375h-9l-8,-8v-8" style="stroke:#f4f4f4;" stroke-width="2"></path>
+            </g>
+        </svg>
+        <div id="item">
+            <div class="box">
+                <div class="infoLeft">
+                    <div class="headPortrait">
+                        <div class="circle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <img src="images/icons/header.png" alt=""/>
+                    </div>
+                    <div class="text">
+                        <h3>John Shark</h3>
+                        <p>Front end engineer</p>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <ul>
+                        <li>最高学历：<span></span></li>
+                        <li>工作经验：<span></span></li>
+                        <li>出身性别：<span></span></li>
+                        <li>所在城市：<span></span></li>
+                        <li>手机号码：<span></span></li>
+                        <li>联系邮箱：<span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+        <div class="hope">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>期望工作</p>
+        </div>
+    </div>
+</div>
+<!-- <audio src="audio/BGsound.mp3" autoplay loop muted></audio>
+<audio src="audio/click.mp3" id="click"></audio>
+<audio src="audio/transform-1.mp3" id="transform-1"></audio>
+<audio src="audio/transform-2.mp3" id="transform-2"></audio>
+<audio src="audio/info.mp3" id="info"></audio>
+<audio src="audio/laser-beam.mp3" id="laser-beam"></audio>
+<audio src="audio/rotation.mp3" id="rotation"></audio>
+<audio src="audio/ufo.mp3" id="mp3ufo"></audio>
+<audio src="audio/zuan.mp3" id="zuan"></audio>
+<audio src="audio/type.mp3" id="type"></audio>
+<audio src="audio/sousou.mp3" id="sousou"></audio> -->
+</body>
+</html>
