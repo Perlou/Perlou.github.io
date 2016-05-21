@@ -141,9 +141,7 @@ function ground(){
     var aSpan = expText.getElementsByTagName('span');
     var expItem = expText.getElementsByClassName('exp-item')[0];
     var oUl = oExp.getElementsByTagName('ul')[0];
-    var oSkillUl = document.getElementById('skillUl');
     var aChild = oUl.children;
-    var aSkillChild = oSkillUl.children;
     var lightLine = oExp.getElementsByClassName('lightLine')[0];
     var lineCase = lightLine.getElementsByClassName('lineCase');
     var imgCase = lightLine.getElementsByClassName('imgCase');
@@ -175,9 +173,7 @@ function ground(){
     var mp3Info = document.getElementById('info');
     var mp3Laser = document.getElementById('laser-beam');
     var oTable = document.getElementById('table');
-    var oSkillTable = document.getElementById('skillTable');
     var aA = oTable.getElementsByTagName('a');
-    var aSkillA = oSkillTable.getElementsByTagName('a');
 
     for(var i=0; i<aChild.length; i++){
 
@@ -185,15 +181,6 @@ function ground(){
         oA.href = 'javascript:;';
         oTable.appendChild(oA);
         aChild[i].index = i;
-
-    }
-
-    for(var i=0; i<aSkillChild.length; i++){
-
-        var oA = document.createElement('a');
-        oA.href = 'javascript:;';
-        oSkillTable.appendChild(oA);
-        aSkillChild[i].index = i;
 
     }
 

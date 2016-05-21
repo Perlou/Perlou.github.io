@@ -4,9 +4,10 @@
 
 'use strict';
 
-var Json = require('./json.js');
-var ground = require('./exp2.js').ground;
-var change = require('./table.js');
+var Json = require('./json');
+var ground = require('./exp2').ground;
+var change = require('./table');
+var Skill = require('./Skill');
 
 var loadingArr = [
     'images/icons/bofang.png',
@@ -251,6 +252,7 @@ function load(){
                         }
                         ground();
                         change();
+                        Skill();
 
                     },500);
                 }

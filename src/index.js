@@ -10,9 +10,6 @@ var init = require('./js/initial');
 var loadCharts = require('./charts/charts');
 
 window.onload = loadFn();
-window.onresize = function(){
-	loadCharts();
-};
 
 function loadFn(){
 	var btn = document.getElementById('frontStart'),

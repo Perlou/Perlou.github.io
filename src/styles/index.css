@@ -183,11 +183,8 @@ nav a.active { color: #fff; text-shadow: 0 0 5px #fff; }
 #table, #skillTable { position: absolute; left: 50%; z-index: 5; }
 #skillTable { bottom: 50px; }
 #table a, #skillTable a { float: left; width: 14px; height: 16px; margin: 0 15px; position: relative; left: -50%; background: url("../images/icons/table.png") no-repeat left; opacity: .6; }
-#table a.active, #skillTable a.acitve { background-position: right; }
+#table a.active{ background-position: right; }
 #table a:hover { opacity: 1; }
-#skillTable a:hover { opacity: 1; }
-#skillUl li { position: absolute; top: 104px; left: 10%; padding: 2% 0; width: 80%; height: 60%; border: 1px solid #fff; border-radius: 10px; box-shadow: 0 0 10px #fff; }
-#skillUl .skillChart { width: 100%; height: 100%; }
 
 
 #backBg { width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); position: fixed; top: 0; display: none; }
@@ -452,4 +449,47 @@ nav a.active { color: #fff; text-shadow: 0 0 5px #fff; }
 }
 
 /* skill */
-#skill { width: 100%; height: 100%; background: url("../images/light.jpg") no-repeat center bottom; overflow: hidden; position: absolute; top: 0; -webkit-transition: all .5s; transition: all .5s; opacity: 0; }
+#skill { width: 100%; height: 100%; background: url("../images/light.jpg") no-repeat center bottom; overflow: hidden; position: absolute; top: 0; -webkit-transition: all .5s; transition: all .5s; opacity: 0; perspective: 600px;
+transform-style:preserve-3d; }
+#skillTable a:hover { opacity: 1; }
+#skillUl li { position: absolute; top: 100px; left: 10%; padding: 2% 0; width: 80%; height: 66%; border: 1px solid  #00b7ee; border-radius: 20px; /*box-shadow: 0 0 5px #fff;*/ visibility: hidden; tranform-origin:right; background-color: rgba(0,183,238,0.08); }
+
+#skillUl li.active { visibility: visible; transform-origin:center; }
+#skillTable .acitve { width: 100px; height: 100px; background: red; }
+
+#skillUl .skillChart { width: 100%; height: 100%; }
+
+#skill .leftHide { 
+  animation: 1s skillLeftHide;  
+  -webkit-animation: 1s skillLeftHide;  
+  -moz-animation: 1s skillLeftHide;  
+  -ms-animation: 1s skillLeftHide;  
+  -o-animation: 1s skillLeftHide;  
+  visibility:hidden; 
+} 
+#skill .rightShow { animation: 1s skillRightShow; visibility:visible; z-index:3;}
+
+@keyframes skillLeftHide{
+  0% { transform: translate3d(0,0,0) rotateY(180deg); opacity: 1; visibility:visible; }
+  100% { transform: translate3d(0,0,100px) rotateY(220deg); opacity: 0; transform-origin:left 50% 0px; }
+}
+
+@keyframes skillRightShow { 
+  0% { transform: translate3d(100%,0,100px) rotateY(-40deg); opacity: 0; }
+  100% { transform: translate3d(0,0,0) rotateY(0deg); opacity: 1; transform-origin:center 50% 0px; }
+}
+
+#skill .leftShow { animation: 1s skillLeftShow; visibility: visible; z-index: 3; }
+#skill .rightHide { animation: 1s skillRightHide; visibility: hidden;  }
+
+
+@keyframes skillLeftShow{
+  0% { transform: translate3d(-100%,0,100px) rotateY(40deg); opacity: 0; }
+  100% { transform: translate3d(0,0,0) rotateY(0deg); opacity: 1; transform-origin:center 50% 0px; }
+}
+
+@keyframes skillRightHide { 
+  0% { transform: translate3d(0,0,0) rotateY(180deg); opacity: 1; visibility:visible; }
+  100% { transform: translate3d(0,0,100px) rotateY(140deg); opacity: 0; transform-origin:right 50% 0px; }
+}
+

@@ -22,7 +22,7 @@ var option = {
     // backgroundColor: '#161627',
     backgroundColor: 'none',
     title: {
-        text: '前端基础技能图',
+        text: '后端基础技能图',
         left: 'center',
         textStyle: {
             color: '#eee'
