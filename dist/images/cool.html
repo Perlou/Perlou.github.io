@@ -1,17 +1,36 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Perlou 个人主页</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>吕迪迪的个人简历</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        var openNub = 0;
+        var bOff = true;
+        var oLi = null;
+    </script>
+    <script src="js/json.js"></script>
+    <script src="js/walkway.min.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/initial.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/myinfo.js"></script>
+    <script src="js/workinfo.js"></script>
+    <script src="js/exp2.js"></script>
+    <script>
+        window.onload = function(){
+
+            init();
+            load();
+            //自我描述
+
+        };
+    </script>
 </head>
 <body>
-<a href="javascript:;" class="simple"></a>
-<div id="front">
-	<div id="frontStart"><span>Start</span></div>
-</div>
+<a href="simple.html" class="simple"></a>
 <div id="audio">
     <div>
         <img src="images/icons/bofang.png" alt=""/>
@@ -59,13 +78,13 @@
 </div>
 <nav>
     <ul>
-        <li><a href="javascript:;" class="active">项目经验</a></li>
-        <li><a href="javascript:;">工作经历</a></li>
-        <li><a href="javascript:;">自我描述</a></li>
-        <li><a href="javascript:;">技能评分</a></li>
+        <li><a href="#" class="active">项目经验</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">工作经历</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">自我描述</a></li>
     </ul>
 </nav>
-<!-- exp -->
 <div id="exp">
     <div class="lightLine"></div>
     <ul></ul>
@@ -98,7 +117,6 @@
         </div>
     </div>
 </div>
-<!-- work -->
 <div id="work">
     <div class="work-info">
         <div id="svgBj"></div>
@@ -170,7 +188,6 @@
         </div>
     </div>
 </div>
-<!-- description -->
 <div id="description">
     <div class="info">
         <div id="bg"></div>
@@ -253,23 +270,7 @@
         </div>
     </div>
 </div>
-<!-- skill -->
-<div id="skill">
-    <ul id="skillUl">
-        <li class="active">
-            <div id="feSkillChart" class="skillChart"></div>     
-        </li>
-        <li>
-            <div id="beSkillChart" class="skillChart"></div>     
-        </li>
-        <li>
-            <div id="fefSkillChart" class="skillChart"></div>     
-        </li>
-    </ul>
-    <div id="skillTable"></div>
-</div>
-<!-- <audio src="audio/BGsound.mp3"></audio> -->
-<audio src="audio/BGsound.mp3" autoplay loop muted></audio>
+<!-- <audio src="audio/BGsound.mp3" autoplay loop muted></audio>
 <audio src="audio/click.mp3" id="click"></audio>
 <audio src="audio/transform-1.mp3" id="transform-1"></audio>
 <audio src="audio/transform-2.mp3" id="transform-2"></audio>
@@ -279,9 +280,6 @@
 <audio src="audio/ufo.mp3" id="mp3ufo"></audio>
 <audio src="audio/zuan.mp3" id="zuan"></audio>
 <audio src="audio/type.mp3" id="type"></audio>
-<audio src="audio/sousou.mp3" id="sousou"></audio>
-
-<script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
-<script type="text/javascript" src="./assets/app.js"></script>
+<audio src="audio/sousou.mp3" id="sousou"></audio> -->
 </body>
 </html>

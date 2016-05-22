@@ -8,49 +8,49 @@ var Json = {
             date:'2015.9',
             detail:'4343',
             image:['images/photo/1/1.png','images/photo/1/2.png','images/photo/1/3.png','images/photo/1/4.png'],
-            link:'www.miaov.com/student/ldd/sekuaifanzhuan'
+            link:'perlou.github.io'
         },
         {
             name:'32424',
             date:'2015.9',
             detail:'34334',
             image:['images/photo/2/1.png','images/photo/2/2.png','images/photo/2/3.png','images/photo/2/4.png'],
-            link:'www.miaov.com/student/ldd/peidui'
+            link:'perlou.github.io'
         },
         {
             name:'34434',
             date:'2015.9',
             detail:'324234234',
             image:['images/photo/3/1.png','images/photo/3/2.png','images/photo/3/3.png','images/photo/3/4.png'],
-            link:'www.miaov.com/student/ldd/ray'
+            link:'perlou.github.io'
         },
         {
             name:'23232',
             date:'2015.9',
             detail:'32432',
             image:['images/photo/4/1.png','images/photo/4/2.png','images/photo/4/3.png','images/photo/4/4.png'],
-            link:'www.miaov.com/student/ldd/calendar'
+            link:'perlou.github.io'
         },
         {
             name:'2342423',
             date:'2015.10',
             detail:'232432',
             image:['images/photo/5/1.png','images/photo/5/2.png','images/photo/5/3.png','images/photo/5/4.png'],
-            link:'www.miaov.com/student/ldd/taobao'
+            link:'perlou.github.io'
         },
         {
             name:'23234',
             date:'2015.10',
             detail:'2323',
             image:['images/photo/6/1.png','images/photo/6/2.png','images/photo/6/3.png','images/photo/6/4.png'],
-            link:'www.miaov.com/student/ldd/page_view'
+            link:'perlou.github.io'
         },
         {
             name:'13131',
             date:'2015.10',
             detail:'2323',
             image:['images/photo/7/1.png','images/photo/7/2.png','images/photo/7/3.png','images/photo/7/4.png'],
-            link:'www.miaov.com/student/ldd/weixinH5'
+            link:'perlou.github.io'
         }
     ],
     work: [
@@ -64,18 +64,18 @@ var Json = {
     ],
     myInfo:{
         name:'perlou',
-        slogan:'3434',
-        edu:'3434',
-        time:'34343',
-        sex:'3434',
-        city:'3434',
-        phone:'343434343',
-        mail:'649342195@qq.com',
-        work:'3434',
+        slogan:'前端开发工程师',
+        edu:'幼儿园',
+        time:'很多年',
+        sex:'未知',
+        city:'哈利路亚星',
+        phone:'110',
+        mail:'',
+        work:'前端开发工程师， 哈利路亚星， 10k-13k',
         work1:'3434',
         nature:'3434343',
-        hopeCity:'34343',
-        money:'34343',
+        hopeCity:'哈利路亚星',
+        money:'233333',
         head:'images/photo/head.jpg',
         ps:''
     }
