@@ -1,6 +1,7 @@
 /**
  * @author Perlou
  * @json.js
+ * @exports {obj} Json
  */
 
 var Json = {
@@ -53,6 +54,14 @@ var Json = {
             image:['images/photo/6/1.png','images/photo/6/2.png','images/photo/6/3.png','images/photo/6/4.png'],
             link:'www.tollroad.com.cn',
             codeSrc: ''
+        },
+        {
+            name:'Voxel',
+            date:'个人项目',
+            detail:'前端关键技术: javascript,canvas,css3新特性,webpack,yeoman.<br/>运用了较多css3和html5新特性的全屏滚动切换网站,基于原生javascript编写,yeoman作为构建工具,webpack作为打包工具进行优化和合理加载.使用了css3的3d场景特性,mousewheel,canvas,三角函数,css3动画等技术.',
+            image:['images/photo/7/1.png','images/photo/7/2.png','images/photo/7/3.png','images/photo/7/4.png'],
+            link:'perlou.github.io/Voxel',
+            codeSrc: 'github.com/Perlou/Voxel'
         }
     ],
     work: [
@@ -84,3 +93,5 @@ var Json = {
     }
 
 };
+
+module.exports = Json;
