@@ -93,5 +93,3 @@ var Json = {
     }
 
 };
-
-module.exports = Json;
