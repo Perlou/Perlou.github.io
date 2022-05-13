@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Application from '@/App'
+import Application from '../App'
 import Sizes from '../Utils/Sizes'
 import EventEmitter from '../Utils/EventEmitter'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'

@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Application from '@/App'
+import Application from '../App'
 import EventEmitter from './EventEmitter'
 import Resources from './Resources'
 import UIEventBus from '../UI/EventBus'

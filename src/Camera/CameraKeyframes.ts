@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { CameraKey } from './Camera'
 import Time from '../Utils/Time'
-import Application from '@/App'
+import Application from '../App'
 import Mouse from '../Utils/Mouse'
 import Sizes from '../Utils/Sizes'
 

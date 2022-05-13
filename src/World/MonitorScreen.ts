@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { CSS3DObject } from 'three/examples/jsm/renderers/CSS3DRenderer.js'
 import GUI from 'lil-gui'
-import Application from '@/App'
+import Application from '../App'
 import Debug from '../Utils/Debug'
 import Resources from '../Utils/Resources'
 import Sizes from '../Utils/Sizes'

@@ -16,7 +16,7 @@ import sources from './sources'
 import Stats from 'stats.js'
 import Loading from './Utils/Loading'
 
-import UI from '@/UI'
+import UI from './UI'
 
 let instance: App | null = null
 

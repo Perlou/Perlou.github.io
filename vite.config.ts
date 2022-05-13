@@ -15,9 +15,25 @@ export default defineConfig({
         }
     },
     base: './',
-    server: {
-        port: 3000,
-        open: true,
-        cors: true
+    build: {
+        target: 'modules',
+        // outDir: resolve(__dirname, `dist/${entryPath}`), //相对于root而言
+        assetsDir: 'assets', //相对于build.outDir而言
+        assetsInlineLimit: 4096,
+        cssCodeSplit: true,
+        minify: 'esbuild',
+        sourcemap: false,
+        rollupOptions: {
+          input: {
+            index: resolve(__dirname, 'index.html'),
+          },
+          output: {
+            chunkFileNames: 'static/js/[name]-[hash].js',
+            entryFileNames: 'static/js/[name].js',
+            assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
+          },
+        },
+        // chunk 大小警告的限制
+        chunkSizeWarningLimit: 500,
     }
 })

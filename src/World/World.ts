@@ -1,4 +1,4 @@
-import Application from '@/App'
+import Application from '../App'
 import Resources from '../Utils/Resources'
 import ComputerSetup from './Computer'
 import MonitorScreen from './MonitorScreen'

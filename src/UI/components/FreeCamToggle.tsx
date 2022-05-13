@@ -7,8 +7,10 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import UIEventBus from '../EventBus'
 import { Easing } from '../animation'
-import camera from '@/static/textures/UI/camera.svg'
-import mouse from '@/static/textures/UI/mouse.svg'
+// @ts-ignore
+import camera from '../../../static/textures/UI/camera.svg'
+// @ts-ignore
+import mouse from '../../../static/textures/UI/mouse.svg'
 
 interface FreeCamToggleProps {}
 
