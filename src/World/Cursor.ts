@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Application from '@/App'
+import Application from '../App'
 import Camera from '../Camera/Camera'
 
 export default class Cursor {

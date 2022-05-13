@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Application from '@/App'
+import Application from '../App'
 import BakedModel from '../Utils/BakedModel'
 import Resources from '../Utils/Resources'
 

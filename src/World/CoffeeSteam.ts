@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Application from '@/App'
+import Application from '../App'
 import Resources from '../Utils/Resources'
 import Time from '../Utils/Time'
 

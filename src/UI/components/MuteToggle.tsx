@@ -7,8 +7,10 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import UIEventBus from '../EventBus'
 import { Easing } from '../animation'
-import volumeOn from '@/static/textures/UI/volume_on.svg'
-import volumeOff from '@/static/textures/UI/volume_off.svg'
+// @ts-ignore
+import volumeOn from '../../../static/textures/UI/volume_on.svg'
+// @ts-ignore
+import volumeOff from '../../../static/textures/UI/volume_off.svg'
 
 interface MuteToggleProps {}
 

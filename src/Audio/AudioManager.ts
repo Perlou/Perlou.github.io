@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import Application from '@/App'
+import Application from '../App'
 import { AmbienceAudio, ComputerAudio } from './AudioSources'
 import UIEventBus from '../UI/EventBus'
 

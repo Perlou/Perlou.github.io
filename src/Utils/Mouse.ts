@@ -1,5 +1,5 @@
 import EventEmitter from './EventEmitter'
-import Application from '@/App'
+import Application from '../App'
 export default class Mouse extends EventEmitter {
     x: number
     y: number
