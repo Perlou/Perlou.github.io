@@ -186,7 +186,7 @@ export default class MonitorScreen extends EventEmitter {
         // Set iframe attributes
         // PROD
         // iframe.src = 'https://henryheffernan.vercel.app/'
-        iframe.src = 'https://perlou.github.io/mmf-ui-toolbox'
+        iframe.src = 'https://perlou.github.io/gallery-by-react'
         /**
          * Use dev server is query params are present
          *
