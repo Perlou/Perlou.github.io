@@ -1,7 +1,8 @@
-import './index.css'
+/**
+ * main.ts
+ * @author Perlou(perloukevin@gmail.com)
+ */
 
-// ReactDOM.createRoot(document.getElementById('root')!).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// )
+import '@/index.css'
+import App from '@/App'
+new App()
