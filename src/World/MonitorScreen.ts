@@ -142,7 +142,7 @@ export default class MonitorScreen extends EventEmitter {
         container.style.background = '#1d2e2f'
 
         // Create iframe
-        document.domain = 'github.com'
+        document.domain = 'perlou.github.io'
         const iframe = document.createElement('iframe')
 
         // Bubble mouse move events to the main application, so we can affect the camera
@@ -186,7 +186,7 @@ export default class MonitorScreen extends EventEmitter {
         // Set iframe attributes
         // PROD
         // iframe.src = 'https://henryheffernan.vercel.app/'
-        iframe.src = 'https://github.com/perlou'
+        iframe.src = 'https://perlou.github.io/mmf-ui-toolbox'
         /**
          * Use dev server is query params are present
          *
