@@ -142,6 +142,7 @@ export default class MonitorScreen extends EventEmitter {
         container.style.background = '#1d2e2f'
 
         // Create iframe
+        document.domain = 'github.com'
         const iframe = document.createElement('iframe')
 
         // Bubble mouse move events to the main application, so we can affect the camera
@@ -206,6 +207,7 @@ export default class MonitorScreen extends EventEmitter {
         iframe.id = 'computer-screen'
         iframe.frameBorder = '0'
         iframe.title = 'HeffernanOS'
+        // iframe.referrerPolicy = 'no-referrer'
 
         // Add iframe to container
         container.appendChild(iframe)
