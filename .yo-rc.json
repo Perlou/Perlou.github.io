@@ -1,8 +1,0 @@
-{
-  "generator-react-webpack": {
-    "appName": "perlou",
-    "style": "css",
-    "postcss": false,
-    "generatedWithVersion": 3
-  }
-}
