@@ -1,6 +1,6 @@
 ## 个人主页
 
-### 预览地址
+### 地址
 [perlou.github.io](https://perlou.github.io)
 
 ### 快速开始
